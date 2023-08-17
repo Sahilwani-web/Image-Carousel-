@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color:yellow;
+}
+img{
+    height: 600px;
+    width: 600px;
+    object-fit: cover;
+}
+.carosel{
+    height: 630px;
+    width: 600px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+
+
+}
+.image-container{
+    display:flex;
+    transform: translateX(0px);
+    transition: transform 0.5s ease-in-out;
+}
+.buttons-conatiner{
+    display:flex;
+    justify-content: space-around;
+}
+.btn{
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    width: 49.6%;
+    /* display: flex; */
+    justify-content: center;
+    cursor: pointer;
+
+
+}
+
+.btn:hover{
+    opacity: 0.9;
+
+
+}
+.btn:focus{
+    outline: none;
+
+}
+
+.experiment{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
